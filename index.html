@@ -1,8 +1,429 @@
----
-layout: default
-title: Hank Quinlan, Horrible Cop
----
-<div class="blurb">
-	<h1>Hi there, I'm Hank Quinlan!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kriti Goyal's portfolio</title>
+    <meta name="author" content="Kriti Goyal">
+    <meta name="description" content="Kriti Goyal's personal portfolio. An overview of Kriti's work history, education history, personal projects and technical skills.">
+    <meta name="keywords" content="Kriti,Goyal,Portfolio,Personal">
+    <meta property="og:title" content="Kriti Goyal's Portfolio">
+    <meta property="og:description" content="Kriti Goyal's Personal Website. An overview of Kriti's education history, work history, personal projects and technical skills.">
+    <meta property="og:image" content="images/kriti.jpeg">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="icons/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
+    <link rel=icon href=icons/favicon.ico>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="landing-container">
+				<!-- <div id="landing-overlay"></div> -->
+				<div class="container landing-content" id="landing-header">
+					<h1 id="heading-name">Kriti Goyal</h1>
+					<h3 id="heading-title">
+						<br>
+						MS CS, UW Madison <br>
+						Ex-Machine Learning & Software Engineer, Apple
+					</h3>
+				</div>
+				<div class="container landing-content" id="landing-footer">
+					<div class="row"><span class="find-out" id="find-out-text">Learn more</span></div>
+					<div class="row"><i class="fas fa-chevron-down" id="landing-chevron"></i></div>
+				</div>
+			</div>
+			<div class="row" id="details-container">
+				<div class="col-2">
+					<div class="sticky-top" id="side-nav">
+						<div class="row side-nav-picture">
+							<img class="avatar" src="images/kriti.jpeg">
+							<h2>Kriti Goyal</h2>
+						</div>
+						<a href="#about">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-user"></i></div>
+									<div class="col">About</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#experience">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-briefcase"></i></div>
+									<div class="col">Experience</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#education">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-graduation-cap"></i></div>
+									<div class="col">Education</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<!-- <a href="#projects">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-laptop-code"></i></div>
+									<div class="col">Projects</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a> -->
+						<a href="#skills">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-chart-bar"></i></div>
+									<div class="col">Skills</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<a href="#achievements">
+							<div class="row side-nav-element">
+								<div class="row">
+									<div class="col-3"><i class="fas fa-trophy"></i></div>
+									<div class="col">Achievements</div>
+								</div>
+								<div class="row">
+									<div class="underbar"></div>
+								</div>
+							</div>
+						</a>
+						<!-- <div class="row justify-content-center" id="resume-container">
+							<a href="images/kriti.jpeg" class="btn btn-lg" id="resume-button" target="_blank" download>
+								<img src="images/resume.svg" width="30">
+								<span>Resume<span>
+							</a>
+						</div> -->
+						<div class="row justify-content-center" id="resume-container">
+							<p id="internship-nav"><b>Actively looking for Summer'22 internship </b></p>
+						</div>
+						<div class="row justify-content-center" id="contact-icons-container">
+							<div class="col-4 contact-icon">
+								<a href="images/kriti.jpeg" target="_blank">
+									<img id="resume-icon" src="images/resume.svg">
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="mailto:kritigoyal16@gmail.com" target="_blank">
+									<i class="fas fa-envelope"></i>
+								</a>
+							</div>
+							<div class="col-4 contact-icon">
+								<a href="https://www.linkedin.com/in/kritigoyal16/" target="_blank">
+									<i class="icon fab fa-linkedin"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-4 contact-icon">
+							<a href="https://www.instagram.com/_kritigoyal/" target="_blank">
+								<i class="icon fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col" id="main-content">
+						<div class="row main-content-element" id="about">
+							<h2>Hi, I'm Kriti <span class="wave">👋🏻</span></h2>
+							<p>Currently, I'm pursuing my Masters in Computer Science from the <a href="https://www.cs.wisc.edu/">University of Wisconsin-Madison</a>. Prior to this, I was working as a Machine Learning, and a Software Engineer with <a href="https://www.apple.com/">Apple</a>. <br><br>
+							My industry experience lies in developing large-scale, automated, production-grade systems.
+							For research, I'm building NLP models for cross-lingual transfer learning & unsupervised domain adaptation under <a href="https://junjiehu.github.io/">Prof. Junjie Hu</a>.</p>
+							<br/>
+							<br/>
+							<div class="row" id="hobbies">
+								<div class="col-7">
+									<p id="internship-about"><b>I’m actively looking for an internship for Summer'22. </b></p>
+								</div>
+								<div class="col-1">
+
+								</div>
+								<div class="col-4">
+									<h3>Hobbies</h3>
+									<div class="row">
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/books.png" width="55"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/dance.svg" width="40"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/keyboard.svg" width="50"></div>
+										<div class="col hobby-icon"><span class="hobby-helper"></span><img src="icons/hobbies/travel.svg" width="65"></div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="row main-content-element justify-content-center" id="experience">
+							<h1>Experience</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" src="images/apple.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Apple</h4></div>
+											<div class="col-4"><h5>Jul 2019 - Aug 2021</h5></div>
+										</div>
+										<h5>Machine Learning Engineer</h5>
+								<!-- 		<li>Implemented FastText model to improve retrieval of articles in the Component-Issue search.</li>
+<li>POCed text-to-speech module for Apple's support guides to improve accessibility for customers with reading and learning disabilities.</li>
+<li>Redesigned Apple retail’s big data analytics pipelines to make them schema-less, migrated from Teradata to separate the compute(Spark) and storage(AWS S3) to scale them independently which led to a 90% reduction in operational costs.</li> -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" id="amazon-logo" src="images/amazon-logo.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Amazon</h4></div>
+											<div class="col-4"><h5>Jan 2019 - Jul 2019</h5></div>
+										</div>
+										<h5>Software Development Engineer - Intern</h5>
+										<!-- <p>I worked on . Utilising .NET, .NET Core, React, Angular 2+, SQL Server.</p> -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-2 logo-container">
+										<img class="logo-img" id="amazon-logo" src="images/amazon-logo.png">
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>Amazon</h4></div>
+											<div class="col-4"><h5>May 2018 - Jul 2018</h5></div>
+										</div>
+										<h5>Software Development Engineer - Intern</h5>
+										<!-- <p>I worked on . Utilising .NET, .NET Core, React, Angular 2+, SQL Server.</p> -->
+									</div>
+									<br><br>
+									<h6 style="text-align:right">Details of the projects in resume</h6>
+								</div>
+								<!-- <div class="row">
+									<div class="col-2 logo-container last-logo">
+										<img class="logo-img" src="images/drdo.jpeg">
+									</div>
+									<div class="col info-container last-container">
+										<div class="row">
+											<div class="col company-name">DRDO</div>
+											<div class="col-3"><h4>July 2019 - Present</h4></div>
+										</div>
+										<h3>Software Engineering Intern</h3>
+										<p>Involved with consulting i</p>
+									</div>
+								</div> -->
+							</div>
+						</div>
+						<div class="row main-content-element justify-content-center" id="education">
+							<h1>Education</h1>
+							<div class="col-10 content-box">
+								<div class="row">
+									<div class="col-2">
+										<div class="logo-container">
+											<img class="logo-img" id="uw-logo" src="images/uw.png">
+										</div>
+									</div>
+									<div class="col info-container">
+										<div class="row">
+											<div class="col company-name"><h4>University of Wisconsin-Madison</h4></div>
+											<div class="col-4"><h5>Sep 2021 - Dec 2022</h5></div>
+										</div>
+										<h5>Master's of Science in Computer and Information Sciences</h5>
+										<li>Research area: Domain Adaptation in NLP under Prof. Junjie Hu</li>
+										<li>Fall 2021: CS760 Machine Learning, CS762 Advanced Deep Learning</li>
+										<li>Grader for CS540 Intro to Artificial Intelligence</li>
+										<!-- <p> Relevant courses: CS760 Machine Learning*, CS762 Big-data systems*, CS744 Selected topics in Deep Learning*</p> -->
+										<!-- <p>* - ongoing</p> -->
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-2">
+										<div class="logo-container last-logo">
+											<img class="logo-img" src="images/bits.png">
+										</div>
+									</div>
+									<div class="col info-container last-container">
+										<div class="row">
+											<div class="col company-name"><h4>Birla Institute of Technology & Science, Pilani</h4></div>
+											<div class="col-4"><h5>Aug 2015 - Jan 2019</h5></div>
+										</div>
+										<h5>Bachelor of Engineering in Computer Science</h5>
+										<li>Thesis: Code smell prediction using machine learning</li>
+										<li>Relevant courses:  Machine Learning, Artificial Intelligence, Data Mining, Information Retrieval, Data Structures & Algorithms, Operating Systems</li>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- <div class="row main-content-element" id="projects">
+							<h1>Projects</h1>
+						</div> -->
+						<div class="row main-content-element" id="skills">
+							<h1>Skills</h1>
+							<div class="container" id="skills-container">
+								<div class="row">
+									<div class="col-2">
+										<!-- <i class="devicon-python-plain"></i> <i class="apache_spark-icon.svg"> -->
+											<img src="icons/Python-logo-notext.svg" height="65">
+										<p>Python</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-scala-plain" height="25"></i> -->
+										<img src="icons/scala_logo.svg" height="65">
+										<p>Scala</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-cplusplus-plain"></i> -->
+										<img src="icons/C++_Logo.svg" height="65">
+										<p>C++</p> 
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-mysql-plain"></i> -->
+										<img src="icons/java_logo.svg" height="65">
+										<p>Java</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-mysql-plain"></i> -->
+										<img src="icons/sql-database.svg" height="65">
+										<p>SQL</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-tensorflow-original"></i> -->
+										<img src="icons/Tensorflow_logo.svg" height="65">
+										<p>TensorFlow</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-amazonwebservices-original"></i> -->
+										<img src="icons/PyTorch_logo.svg" height="65">
+										<p>PyTorch</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-amazonwebservices-original"></i> -->
+										<img src="icons/AWS-cloud.svg" height="65">
+										<p>AWS</p>
+									</div>
+									<div class="col-2">
+										<!-- <i class="devicon-git-plain"></i> -->
+										<img src="icons/Git_icon.svg" height="65">
+										<p>Git</p>
+									</div>
+									
+									<div class="col-2">
+										<!-- <i class="apache_spark-icon.svg"></i> -->
+										<img src="icons/apache_spark-icon.svg" height="65">
+										<p>Spark</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row main-content-element" id="achievements">
+							<h1>Achievements</h1>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>Best Innovation Award, Govt. of India</b></div>
+									<div class="col-3 achievement-date">Mar 2018</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Of 64 nationwide finalists in the Smart India Hackathon.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>National top 16, Miss India Organization</b></div>
+									<div class="col-3 achievement-date">Nov 2017</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Received intensive training & grooming from renowned experts from the fashion & glamour fraternity under Campus Princess, Miss India organization.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>ACM-ICPC, Baylor University</b></div>
+									<div class="col-3 achievement-date">Oct 2016</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Ranked 2 out of 54 college teams. Competed in Amritapuri regionals.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>Kishore Vaigyanik Protsahan Yojana (KVPY), Govt. of India</b></div>
+									<div class="col-3 achievement-date">Mar 2014</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Top 0.2% - All India Rank 246 from over 135,000 candidates.</p>
+								</div>
+							</div>
+							<div class="container">
+								<div class="row">
+									<div class="col-9 achievement-title"><b>National Talent Search Examination (NTSE), Govt. of India</b></div>
+									<div class="col-3 achievement-date">May 2011</div>
+								</div>
+								<div class="row achievement-content">
+									<p>Top 0.05% - All India Rank in the top 500 from over 800,000 candidates.</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+			<!-- <div class="row" id="footer">
+				<h1>CONTACT</h1>
+				<div class="row justify-content-center">
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/kritigoyal16/">
+							<div class="footer-icon-container" id="linkedin">
+								<i class="icon fab fa-linkedin"></i>
+							</div>
+							<p>Linkedin</p>
+						</a>
+					</div>
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/kritigoyal16/">
+							<div class="footer-icon-container" id="linkedin">
+								<i class="icon fab fa-linkedin"></i>
+							</div>
+							<p>Linkedin</p>
+						</a>
+					</div>
+					<div class="col-2">
+						<a href="https://www.linkedin.com/in/kritigoyal16/">
+							<div class="footer-icon-container" id="linkedin">
+								<i class="icon fab fa-linkedin"></i>
+							</div>
+							<p>Linkedin</p>
+						</a>
+					</div>
+				</div>
+			</div> -->
+			<div class="row" id="copyright">
+				<div class="col-2"><!-- <img src="https://visitor-badge.glitch.me/badge?page_id=kg16/kg16.github.io" alt="Views" style="width:5%;"/> --></div>
+				<div class="col-8">Made with <span id="love">❤️</span> by <span id="footer-name">Kriti Goyal </span></div>
+				<div class="col-2"><p>Last updated: Oct, 2021</p></div>
+			</div>
+
+			<div class="views">
+    		<!-- <span class="views"> -->
+      		<!-- <img src="https://visitor-badge.glitch.me/badge?page_id=kg16/kg16.github.io" alt="Views"/> -->
+    		<!-- </span> -->
+			</div>
+		</div>
+		<!-- JS -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src='js/main.js'></script>
+
+	</body>
+</html>
